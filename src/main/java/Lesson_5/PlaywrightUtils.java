@@ -22,4 +22,10 @@ public class PlaywrightUtils {
         page.setViewportSize((int) screen.getWidth(), (int) screen.getHeight());
         return page;
     }
+    public static void closeAll(Page page, Browser browser, Playwright playwright) {
+        if (page != null) page.close();
+        if (browser != null) browser.close();
+        if (playwright != null) playwright.close();
+        System.out.println("✅ Playwright resources closed successfully.");
+    }
 }
