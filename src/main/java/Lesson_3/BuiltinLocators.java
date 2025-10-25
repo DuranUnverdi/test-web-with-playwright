@@ -43,8 +43,8 @@ public class BuiltinLocators {
         Locator labelLocator = page.getByLabel("login button");
         System.out.println("5.Label TextBox Placeholder: " + labelLocator.innerText());
 
-        //click login button
-        //getByRole
+        /*click login button
+        getByRole*/
         Locator loginButton = page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Giriş yap"));
         loginButton.click();
 
