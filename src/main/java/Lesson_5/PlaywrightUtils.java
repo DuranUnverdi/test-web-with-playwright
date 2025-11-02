@@ -6,6 +6,7 @@ import com.microsoft.playwright.Page;
 import com.microsoft.playwright.Playwright;
 
 import java.awt.*;
+import java.util.Arrays;
 
 public class PlaywrightUtils {
     public static Dimension getScreenSize() {
@@ -13,9 +14,15 @@ public class PlaywrightUtils {
     }
 
     public static Browser launchBrowser(Playwright playwright, boolean headless) {
-        return playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(headless));
-    }
+        BrowserType.LaunchOptions options = new BrowserType.LaunchOptions()
+                .setHeadless(headless)
+                .setSlowMo(100) // (isteğe bağlı) adımlar arası yavaşlatma
+                .setArgs(Arrays.asList("--start-maximized")); // tarayıcıyı tam ekran aç
 
+        // Playwright 1.49+ sürümünde varsa reuseBrowser seçeneğiyle:
+        // options.setReuseBrowser(true);
+        return playwright.chromium().launch(options);
+    }
     public static Page createFullScreenPage(Browser browser) {
         Dimension screen = getScreenSize();
         Page page = browser.newPage();
