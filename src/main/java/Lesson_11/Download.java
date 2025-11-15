@@ -1,3 +1,5 @@
+package Lesson_11;
+
 import Lesson_5.PlaywrightUtils;
 import com.microsoft.playwright.Browser;
 import com.microsoft.playwright.Page;
