@@ -1,6 +1,6 @@
 package Lesson_5;
 
-import Utilities.ScreenShot.util.PlaywrightUtils;
+import Utilities.util.PlaywrightUtils;
 import com.microsoft.playwright.*;
 
 public class IframeLocator {
