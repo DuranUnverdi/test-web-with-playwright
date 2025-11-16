@@ -1,13 +1,9 @@
 package Lesson_8;
 
-import Lesson_5.PlaywrightUtils;
+import Utilities.util.PlaywrightUtils;
 import com.microsoft.playwright.Browser;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.Playwright;
-
-import java.util.List;
-
-import static Lesson_5.PlaywrightUtils.closeAll;
 
 public class MultibleWindowsTab {
     public static void main(String[] args) throws InterruptedException {
