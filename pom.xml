@@ -22,13 +22,21 @@
             <artifactId>playwright</artifactId>
             <version>1.45.0</version> <!-- En güncel sürüm için kontrol etmen gerekebilir -->
         </dependency>
-
-        <!-- JUnit 5 (isteğe bağlı, testler için) -->
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>7.10.2</version>
+        </dependency>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
             <version>5.10.0</version>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.example</groupId>
+            <artifactId>playwright-test</artifactId>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
 

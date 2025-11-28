@@ -1,4 +1,4 @@
-package Lesson_1;
+package Lessons.Lesson_1;
 
 import com.microsoft.playwright.Browser;
 import com.microsoft.playwright.BrowserType;

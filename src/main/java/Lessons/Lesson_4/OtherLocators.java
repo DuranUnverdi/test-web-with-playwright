@@ -1,4 +1,4 @@
-package Lesson_4;
+package Lessons.Lesson_4;
 
 import com.microsoft.playwright.*;
 

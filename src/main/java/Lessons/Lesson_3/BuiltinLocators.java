@@ -1,4 +1,4 @@
-package Lesson_3;
+package Lessons.Lesson_3;
 
 import com.microsoft.playwright.*;
 import com.microsoft.playwright.options.AriaRole;

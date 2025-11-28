@@ -1,6 +1,6 @@
-package Lesson_11;
+package Lessons.Lesson_11;
 
-import Utilities.util.PlaywrightUtils;
+import Lessons.Utilities.util.PlaywrightUtils;
 import com.microsoft.playwright.*;
 
 import java.nio.file.Paths;
