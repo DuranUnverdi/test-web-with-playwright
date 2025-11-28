@@ -1,6 +1,6 @@
-package Lesson_8;
+package Lessons.Lesson_8;
 
-import Utilities.util.PlaywrightUtils;
+import Lessons.Utilities.util.PlaywrightUtils;
 import com.microsoft.playwright.Browser;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.Playwright;
